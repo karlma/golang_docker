@@ -16,9 +16,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		wget \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV GOLANG_VERSION 1.8.3
+ENV GOLANG_VERSION 1.9.2
 
-ADD go1.8.3.linux-amd64.tar.gz /usr/local/
+ADD go1.9.2.linux-amd64.tar.gz /usr/local/
 
 RUN set -eux; \
 	export PATH="/usr/local/go/bin:$PATH"; \
